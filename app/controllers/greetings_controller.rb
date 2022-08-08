@@ -10,8 +10,8 @@ class GreetingsController < ApplicationController
     if id.nil?
       render json: { error: 'opps! not found' }.to_json, status: 404
     else
-      @message = Message.find(id)
-      render json: @message
+      @greetings = Greeting.find(id)
+      render json: @greetings
     end
   end
 

@@ -1,17 +1,17 @@
 import React from "react"
-import PropTypes from "prop-types"
 import Greetings from "./Greetings";
-class HelloReactRails extends React.Component {
+import PropTypes from "prop-types"
+class App extends React.Component {
   render () {
     return (
       <React.Fragment>
-       <Greetings/>
+        <Greetings />
       </React.Fragment>
     );
   }
 }
 
-HelloReactRails.propTypes = {
+App.propTypes = {
   greeting: PropTypes.string
 };
-export default HelloReactRails
+export default App
