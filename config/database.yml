@@ -16,6 +16,11 @@
 #
 default: &default
   adapter: postgresql
+  database: rails_react_app
+  pool: 5
+  username: postgres
+  password: seeyouathome
+  host: localhost
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
@@ -23,7 +28,13 @@ default: &default
 
 development:
   <<: *default
-  database: hello_rails_react_development
+  adapter: postgresql
+  database: rails_react_app
+  pool: 5
+  username: postgres
+  password: seeyouathome
+  host: localhost
+  encoding: unicode
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
