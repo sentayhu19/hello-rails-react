@@ -21,18 +21,6 @@ const Greetings = () =>  {
       
       </div>)
   }
-    // const x = greetings.map((greeting) => {
-    //   return <div key={greeting.id}>{greeting.content}</div>;
-    // }).reverse();
-    // return(
-    //   <>
-    //   <h1>GREETINGS</h1>
-    
-    //   <button>Get Greeting</button>
-    //  {x}       
-    
-      // </>
-    // )
   }
 
 
