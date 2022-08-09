@@ -15,9 +15,10 @@ const Greetings = () =>  {
     .map(function(key) {
         return greetings[key];
     });
-    return (<div>
-      <button>Get Greeting</button>
-      {array[1]}
+    return (<div className='greetings-wrap'>
+      <h1>{array[1]}</h1>
+      <button onClick={() => dispatch(getDataAPI())}>Get Greeting</button>
+      
       </div>)
   }
     // const x = greetings.map((greeting) => {

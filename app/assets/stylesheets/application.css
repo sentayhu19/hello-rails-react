@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+.greetings-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+button {
+  background-color: green;
+  color: white;
+}
+
+button:hover {
+  background-color: #f2faf2;
+  color: rgb(12, 11, 11);
+}
+
+h1 {
+  text-align: center;
+}
